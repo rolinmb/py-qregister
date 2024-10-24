@@ -23,7 +23,6 @@ if __name__ == '__main__':
             nqd2Ones += 1
         elif measurement[1] == 2:
             nqd2Twos += 1
-
     print(f"src/main.py :: Quantum Register Measurement Test Results after {N_ITERS} Iterations:")
     print(f"\tqudit1 -> {nqd1Zeros} Zeros observed; {nqd1Ones} Ones observed.")
     print(f"\tqudit2 -> {nqd2Zeros} Zeros oberved; {nqd2Ones} Ones observed; {nqd2Twos} Twos observed.")
