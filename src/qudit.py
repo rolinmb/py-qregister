@@ -4,7 +4,7 @@ class qudit:
         self._validate()
 
     def _validate(self):
-        total_prob = sum(abs(c)**2 for c in self.amplitudes)
+        total_prob = sum(abs(c)**2 for c in self.amplitudes) # every qudit must be valid
         if round(total_prob, 10) != 1.0:
             raise ValueError(f"src/main.py Qudit outcome probabilities do not sum to 1: {total_prob}")
 
@@ -15,3 +15,9 @@ class qudit:
             cumulative_prob += prob
             if obs < cumulative_prob:
                 return i
+
+    def resetAmplitudes(self, *amplitudes):
+        self.amplitudes = list(amplitudes)        
+
+    def resetRegister(self):
+        self.amplitudes = list()

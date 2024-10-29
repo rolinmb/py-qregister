@@ -1,20 +1,33 @@
 from util import true_pyrand
+from collections import Counter
+import matplotlib.pyplot as plt
 
 class qregister:
     def __init__(self, *qudits):
-        self.qudits = list(qudits)
-    """ self._validate() # Don't need to validate register if all qudits are entangled and validated too
+        self.qudits = list(qudits) # Don't need to re-validate
     
-    def _validate(self):
-        for qudit in self.qudits:
-            total_prob = sum(abs(c)**2 for c in qudit.amplitudes)
-            if round(total_prob, 6) != 1.0:
-                raise ValueError(f"src/qregister.py Qudit {qudit} outcome probabilities do not sum to 1: {total_prob}")
-    """
     def measure(self):
         result = []
         obs = true_pyrand()
         for qudit in self.qudits:
-            measured_value = qudit.measure(obs)
-            result.append(measured_value)
+                measured_value = qudit.measure(obs)
+                result.append(measured_value)
+            #self.visualize_measurement(result)
         return result
+
+""" def visualize_measurement(self, result):
+        counts = Counter(result)
+        states, freqs = zip(*counts.items())
+        total_measurements = sum(freqs)
+        probabilities = [freq / total_measurements for freq in freqs]
+        fig, ax = plt.subplots()
+        ax.bar(states, probabilities, color='skyblue')
+        ax.set_xlabel('Measured States')
+        ax.set_ylabel('Probability')
+        ax.set_title('Measurement Probabilities of Quantum Register')
+        ax.set_ylim(0, 1)
+        for i, prob in enumerate(probabilities):
+            ax.text(states[i], prob + 0.02, f"{prob:.2f}", ha='center', va='bottom')
+        plt.show()
+"""
+    
