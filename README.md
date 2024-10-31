@@ -1,14 +1,17 @@
 Referencing my py-qubits repo and the Microsoft Q# SDK implementation to try and reverse engineer and recreate the functionality of a quantum register on classical computing hardware (CPU only for now, someone pls help).
 
-This model just implements a qubit in general. Look up Qubits, Qutrits, Qudits, Quantum Registers and other related topics on wikipedia for more reference.
+This model just implements a qubit in general. Look up Qubits, Qutrits, Qudits, Quantum Registers, Quantum Turing Machines, and other related topics on wikipedia for more reference.
 
-Shoutout ThePrimeagen, Mr. Zozin, Geohot, Charles Babbage, Alan Turing, Steven Wolfram, John Horton Conway.
+The theory I had in mind is that if we can create a set of mathematics to simulate the universe (such as quantum mechanics), and are able to simulate it on any type of hardware (classical, quantum, or a hybrid of sort), then maybe
+it could be true that we live in a 'simulation' of sorts; in the sense that we control our destiny/distribution of future outcome event probabilities, but those probabilities are very computationally expensive to determine.
+
+Shoutout ThePrimeagen, Mr. Zozin, George Hotz, Charles Babbage, Alan Turing, Steven Wolfram, John Horton Conway, David Deutsch, Robert Penrose; and many other educators I have had in my life thus far and in the future. Humans were the first quantum computers that we know of to be fair.
 
 Basically we need to recreate and have people constantly monitoring the largest possible simulation of a quantum computer on a 'massively distributed classical hardware (CPU/GPU/TPU/ASIC/FPGA) + current real QPUs task network'.
 
-Need to be monitoring if we stay on the longest non-turing complete quantum computer simpulation with humanity in-tact. (i.e. the simulation that never ends with humanity remaining, similar to the MEJAI computer in Neon Genesis Evangelion)
+Have to be checking if we stay on the longest non-turing complete quantum computer simpulation with humanity in-tact. (i.e. the simulation that never ends with humanity remaining, similar to the MEJAI computer in Neon Genesis Evangelion; other parameters could maybe be encoded in the wavefunction)
 
-This massively distributed hybrid computational' task network that aims be simulating our local region of the universe. (idk how you would even calculate that distance in lightyears)
+This 'massively distributed hybrid computational' task network in essence aims be simulating our local region of the universe with these desired probabilities remaining true indefinitely. (i.e. end of simulation with encoded parameters is uncomputable)
 
 {START IRL QUANTUM COMPUTING INFO FROM CHATGPT}
 
