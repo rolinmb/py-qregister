@@ -1,6 +1,6 @@
 from util import true_pyrand
 from collections import Counter
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 class qregister:
     def __init__(self, *qudits):

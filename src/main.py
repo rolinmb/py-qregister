@@ -5,8 +5,11 @@ from math import sqrt
 N_ITERS = 10000
 
 if __name__ == '__main__':
-    qudit1 = qudit(0.5, sqrt(3)/2) # 25% chance to collapse to {0}; 75% chance to collapse to '1'
-    qudit2 = qudit(0.5, 0.5, sqrt(2)/2) # 25% chance to collapse0 to {0} or {1}, 50% chance to collapse to {2}
+    try:
+        qudit1 = qudit(0.5, sqrt(3)/2) # 25% chance to collapse to {0}; 75% chance to collapse to '1'
+        qudit2 = qudit(0.5, 0.5, sqrt(2)/2) # 25% chance to collapse0 to {0} or {1}, 50% chance to collapse to {2}
+    except ValueError:
+        print(f"src/main.py :: Value Error while trying to instantiate qudit")
     qr = qregister(qudit1, qudit2)
     nqd1Zeros = nqd1Ones = 0
     nqd2Zeros = nqd2Ones = nqd2Twos = 0
