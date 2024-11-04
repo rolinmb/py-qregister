@@ -13,6 +13,8 @@ Have to be checking if we stay on the longest non-turing complete quantum comput
 
 This 'massively distributed hybrid computational' task network in essence aims be simulating our local region of the universe with these desired probabilities remaining true indefinitely. (i.e. end of simulation with encoded parameters is uncomputable)
 
+Only such a 'massively distrubuted hybrid computational task network' would be able to break modern RSA encryption algorithms/conduct Shor's algorithm in reasonable time.
+
 {START IRL QUANTUM COMPUTING INFO FROM CHATGPT}
 
 In real quantum computing hardware, qubits and qudits are typically made from physical systems that can exhibit and control quantum states reliably. Here are some common types of qubit implementations and the elements or systems they use:
@@ -55,7 +57,7 @@ Some thoughs/TODO:
 
     * IDK if I am validating a quantum register correctly. I couldn't find an exact equation like the method used to validate an inidividual qudit;
     the implementation I have is a result of working with ChatGPT. I am assuming a valid qudit must have its individual measurement
-    state probabilities sum to 1 (i.e. the sum of complex modulus for each complex number describing a qudit must sum to 1). This still allows
+    state probabilities sum to 1 (i.e. the sum of complex modulus for each complex number describing a qudit must equal 1). This still allows
     for encoded states that may not ever be observable (i.e. have complex modulus/probability of 0).
     
     * IDK how to visualize all the states and ther probabilities (permutations may need a revisit smh)
